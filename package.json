@@ -1,0 +1,27 @@
+{
+  "name": "@craftkit/craft-widget-calendar",
+  "version": "1.0.0",
+  "description": "Fully customizable JavaScript calendar widget for Craftkit",
+  "main": "index.js",
+  "module": "index.js",
+  "unpkg": "dist/craft-widget-calendar.min.js",
+  "dependencies": {
+    "craft-uikit": "https://github.com/craftkit/craft-uikit"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "wabpack --config config/webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craftkit/craft-widget-calendar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/craftkit/craft-widget-calendar/issues"
+  },
+  "homepage": "https://github.com/craftkit/craft-widget-calendar"
+}

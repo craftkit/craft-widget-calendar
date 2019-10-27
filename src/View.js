@@ -171,7 +171,7 @@ export class View extends Craft.UI.View {
 			this_month = this.index[ prev_month_yyyymm ];
 		}else{
 			this_month = new Month({
-				delegate   : this,
+				delegate   : this.delegate,
 				yyyy       : prev_month_yyyy,
 				mm         : prev_month_mm,
 				Day        : this.dayClass,
@@ -206,7 +206,7 @@ export class View extends Craft.UI.View {
 			this_month = this.index[ next_month_yyyymm ];
 		}else{
 			this_month = new Month({
-				delegate   : this,
+				delegate   : this.delegate,
 				yyyy       : next_month_yyyy,
 				mm         : next_month_mm,
 				Day        : this.dayClass,

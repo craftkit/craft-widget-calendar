@@ -67,8 +67,8 @@ Calendar with you appointment note.
             }
             
             var calendar = new Craft.Widget.Calendar.View({
-                yyyy       : 2019,
-                mm         : 10,
+                yyyy       : this_month.format('YYYY'),
+                mm         : this_month.format('MM'),
                 delegate   : handler,
                 Day        : MyDay,
             });

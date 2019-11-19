@@ -17,7 +17,16 @@
     "type": "git",
     "url": "git+https://github.com/craftkit/craft-widget-calendar.git"
   },
-  "keywords": [],
+  "keywords": [
+  	"WebComponents",
+  	"Shadow DOM",
+  	"OOP",
+  	"SPA",
+  	"PWA",
+  	"frontend",
+	"UI widget",
+	"Calendar"
+  ],
   "author": "",
   "license": "MIT",
   "bugs": {

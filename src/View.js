@@ -1,5 +1,5 @@
 
-import * as Craft from 'craft-uikit';
+import * as Craft from '@craftkit/craft-uikit';
 
 import { Month } from './Month.js';
 import { Day } from './Day.js';

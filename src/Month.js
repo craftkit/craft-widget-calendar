@@ -115,6 +115,7 @@ export class Month extends Craft.UI.View {
 		let this_month_month = this.this_month.month() + 1;
 		
 		let weekday_cursor = this.this_month.weekday();
+		let today_iso = this.today.format('YYYY-MM-DD');
 		
 		for( let i=0; i<this.this_month.daysInMonth(); i++ ){
 			let weekday = weekday_cursor % 7;
@@ -126,6 +127,9 @@ export class Month extends Craft.UI.View {
 				classes    : ['weekday'+weekday,'this_month'],
 				StyleSheet : this.styleSheet,
 			});
+			if( day.iso == today_iso ){
+				day.classes.push('today');
+			}
 			day.loadView();
 			this.this_days.push(day);
 			this.days.push(day);
@@ -153,11 +157,6 @@ export class Month extends Craft.UI.View {
 			this.days.push(day);
 			this.index[day.iso] = day;
 			weekday_cursor++;
-		}
-		
-		// mark today
-		if( this.index[this.today.format('YYYY-MM-DD')] ){
-			this.index[this.today.format('YYYY-MM-DD')].classes.push('today');
 		}
 	}
 	

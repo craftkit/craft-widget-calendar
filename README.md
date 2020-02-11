@@ -7,6 +7,8 @@ Fully customizable JavaScript calendar widget for Craftkit.
 
 This widget requires [Craft-UIkit](https://github.com/craftkit/craft-uikit) and [Moment.js](https://momentjs.com).
 
+This package does not include Moment.js. You have to manage it by yourself.
+
 ## Demo
 
 Here is a [Pull-down calendar demo](https://codepen.io/raykitajima/pen/vYYYoMv) working with [craft-widget-quicktools](https://github.com/craftkit/craft-widget-quicktools).

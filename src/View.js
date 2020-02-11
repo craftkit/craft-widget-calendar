@@ -258,8 +258,8 @@ export class View extends Craft.UI.View {
 				<div id="header" class="header"></div>
 				<div id="month" class="month"></div>
 				<div id="navi" class="navi">
-					<div id="prev" class="prev" onclick="Craft.Core.ComponentStack.get('${componentId}').prev();"> ← <i class="fa fa-arrow-left fa-fw"></i></div>
-					<div id="next" class="next" onclick="Craft.Core.ComponentStack.get('${componentId}').next();"> → <i class="fa fa-arrow-right fa-fw"></i></div>
+					<div id="prev" class="prev" onclick="Craft.Core.ComponentStack.get('${componentId}').prev();"> ← </div>
+					<div id="next" class="next" onclick="Craft.Core.ComponentStack.get('${componentId}').next();"> → </div>
 				</div>
 			</div>
 		`;

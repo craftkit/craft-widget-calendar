@@ -179,7 +179,7 @@ export class View extends Craft.UI.View {
 			});
 			this.index[ prev_month_yyyymm ] = this_month;
 		}
-		this.removeView(this.month);
+		this.removeSubView(this.month);
 		
 		this.delegate.handleSelectCalendarMonth(this_month);
 		
@@ -214,9 +214,7 @@ export class View extends Craft.UI.View {
 			});
 			this.index[ next_month_yyyymm ] = this_month;
 		}
-		this.removeView(this.month);
-		
-		this.delegate.handleSelectCalendarMonth(this_month);
+		this.removeSubView(this.month);
 		
 		this.month = this_month;
 		this.appendView({
